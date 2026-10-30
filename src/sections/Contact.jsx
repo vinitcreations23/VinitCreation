@@ -2,28 +2,27 @@ import { useState } from 'react';
 
 const CONTACT_INFO = [
   {
-    icon: "📍",
+    icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>,
     label: "Our Workshop",
     value: "M5 Mahavir Market, Near Udhana Railway Station, Udhyog Nagar, Surat, Gujarat 394210",
-    link: "https://maps.app.goo.gl/oAbPq8a9RdVdPtJc9",
-    linkText: "Get Directions",
+    link: null,
   },
   {
-    icon: "📞",
+    icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 8.18 19.79 19.79 0 0 1 .1 5.6 2 2 0 0 1 2.08 3.52h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 11.1a16 16 0 0 0 6 6l.72-.72a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" /></svg>,
     label: "Phone / WhatsApp",
     value: "+91 98234 98295",
     link: "tel:+919823498295",
     linkText: "Call Now",
   },
   {
-    icon: "✉️",
+    icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>,
     label: "Email",
     value: "vinitcreations23@gmail.com",
     link: "mailto:vinitcreations23@gmail.com",
     linkText: "Send Email",
   },
   {
-    icon: "🕐",
+    icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>,
     label: "Business Hours",
     value: "Monday – Saturday: 9:30 AM – 8:00 PM",
     link: null,
@@ -59,7 +58,7 @@ Message: ${form.message}`
   };
 
   return (
-    <section id="contact" className="section-py bg-navy" aria-label="Contact Vinit Creations">
+    <section id="contact" className="section-py bg-forest-deep" aria-label="Contact Vinit Creations">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 reveal">
           <span className="section-label">Get in Touch</span>

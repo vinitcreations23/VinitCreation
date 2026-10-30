@@ -43,8 +43,8 @@ export default function Hero() {
       }} />
 
       {/* Floating orbs */}
-      <div className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full opacity-5 animate-float" style={{ background: 'radial-gradient(circle, #C9A84C, transparent)', animationDelay: '0s' }} />
-      <div className="absolute bottom-1/3 left-1/5 w-40 h-40 rounded-full opacity-5 animate-float" style={{ background: 'radial-gradient(circle, #C9A84C, transparent)', animationDelay: '2s' }} />
+      <div className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full opacity-5 animate-float" style={{ background: 'radial-gradient(circle, #D4A843, transparent)', animationDelay: '0s' }} />
+      <div className="absolute bottom-1/3 left-1/5 w-40 h-40 rounded-full opacity-5 animate-float" style={{ background: 'radial-gradient(circle, #D4A843, transparent)', animationDelay: '2s' }} />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24">
@@ -93,10 +93,10 @@ export default function Hero() {
           {/* Trust Badges */}
           <div className="flex flex-wrap gap-6 mt-12 animate-fade-up delay-500">
             {[
-              { icon: '🏆', label: '500+ Clients' },
-              { icon: '✂️', label: 'Custom Tailoring' },
-              { icon: '🚀', label: 'Bulk Orders' },
-              { icon: '📍', label: 'Surat Based' },
+              { icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" /><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" /><path d="M4 22h16" /><path d="M10 14.66V17a1 1 0 0 0 .55.89A4 4 0 0 0 13.45 19a1 1 0 0 0 .55-.89V14.66" /><path d="M18 9h-3v7a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9H4" /></svg>, label: '500+ Clients' },
+              { icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3" /><circle cx="6" cy="18" r="3" /><path d="M20 4 8.12 15.88" /><path d="M14.47 14.48 20 20" /><path d="M8.12 8.12 12 12" /></svg>, label: 'Custom Tailoring' },
+              { icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-4 5-7 5" /><path d="M12 2v4" /><path d="m14 9 3-3 3 3" /><path d="M15 9 12 12" /><path d="M15 15H3a6 6 0 0 0 6 6c2 0 4-.8 5-3" /></svg>, label: 'Bulk Orders' },
+              { icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>, label: 'Surat Based' },
             ].map((badge) => (
               <div key={badge.label} className="flex items-center gap-2">
                 <span className="text-lg">{badge.icon}</span>

@@ -1,10 +1,10 @@
 import { useEffect, useRef } from 'react';
 
 const VALUES = [
-  { icon: '🎯', title: 'Precision Craftsmanship', desc: 'Every stitch is perfected with meticulous attention to fit, finish, and fabric quality.' },
-  { icon: '⚡', title: 'Bulk Ready', desc: 'From 50 to 50,000 pieces — we scale effortlessly without compromising quality.' },
-  { icon: '🎨', title: 'Custom Branding', desc: 'Logos, embroidery, screen printing — your brand identity woven into every uniform.' },
-  { icon: '🤝', title: 'Trusted Partnerships', desc: 'Serving corporates, hospitals, hotels, and institutions across Gujarat and beyond.' },
+  { icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg>, title: 'Precision Craftsmanship', desc: 'Every stitch is perfected with meticulous attention to fit, finish, and fabric quality.' },
+  { icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" /></svg>, title: 'Bulk Ready', desc: 'From 50 to 50,000 pieces — we scale effortlessly without compromising quality.' },
+  { icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="13.5" cy="6.5" r="2.5" /><circle cx="18.5" cy="11.5" r="2.5" /><circle cx="8.5" cy="17.5" r="2.5" /><path d="M13.5 6.5a5 5 0 0 1 7.5 7.5" /><path d="M13.5 6.5a5 5 0 0 0-7.5 7.5" /></svg>, title: 'Custom Branding', desc: 'Logos, embroidery, screen printing — your brand identity woven into every uniform.' },
+  { icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M19.5 4.5 21 6m0 0-3.315 3.315A2 2 0 0 1 14.5 10.5H6a4 4 0 0 1-4-4V4a2 2 0 0 1 2-2h4" /><path d="M22 18h-6a4 4 0 0 0-4 4v4a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2" /></svg>, title: 'Trusted Partnerships', desc: 'Serving corporates, hospitals, hotels, and institutions across Gujarat and beyond.' },
 ];
 
 function useReveal() {
@@ -21,7 +21,7 @@ export default function About() {
   useReveal();
 
   return (
-    <section id="about" className="section-py bg-ivory" aria-label="About Vinit Creations">
+    <section id="about" className="section-py bg-cream" aria-label="About Vinit Creations">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
@@ -41,19 +41,20 @@ export default function About() {
 
             {/* Floating badge */}
             <div className="floating-badge bottom-6 right-0 sm:-right-4" style={{ animationDelay: '1s' }}>
-              ⭐ Surat's Most Trusted Uniform Brand
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="inline-block mr-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+              Surat's Most Trusted Uniform Brand
             </div>
 
             {/* Gold accent */}
-            <div className="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-[rgba(201,168,76,0.4)] rounded-tl-2xl" />
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-[rgba(201,168,76,0.4)] rounded-br-2xl" />
+            <div className="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-[rgba(212,168,67,0.4)] rounded-tl-2xl" />
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-[rgba(212,168,67,0.4)] rounded-br-2xl" />
           </div>
 
           {/* Content Column */}
           <div className="reveal-right">
             <span className="section-label">Our Story</span>
 
-            <h2 className="font-display text-navy text-4xl sm:text-5xl font-bold mt-5 leading-tight">
+            <h2 className="font-display text-forest text-4xl sm:text-5xl font-bold mt-5 leading-tight">
               Crafting Identity,<br/>
               <span className="italic text-gold">One Uniform at a Time</span>
             </h2>
@@ -63,7 +64,7 @@ export default function About() {
             </div>
 
             <p className="text-charcoal/70 leading-relaxed mb-5">
-              Founded by <strong className="text-navy font-semibold">Purab Patil</strong>, Vinit Creations was born from a belief that uniforms are more than just clothing — they are a statement of identity, professionalism, and pride.
+              Founded by <strong className="text-forest font-semibold">Purab Patil</strong>, Vinit Creations was born from a belief that uniforms are more than just clothing — they are a statement of identity, professionalism, and pride.
             </p>
 
             <p className="text-charcoal/70 leading-relaxed mb-8">
@@ -75,7 +76,7 @@ export default function About() {
               {VALUES.map((v, i) => (
                 <div key={v.title} className="luxury-card p-5 reveal" style={{ transitionDelay: `${i * 120}ms` }}>
                   <div className="text-2xl mb-2">{v.icon}</div>
-                  <h3 className="font-display text-navy font-semibold text-base mb-1">{v.title}</h3>
+                  <h3 className="font-display text-forest font-semibold text-base mb-1">{v.title}</h3>
                   <p className="text-charcoal/60 text-sm leading-relaxed">{v.desc}</p>
                 </div>
               ))}

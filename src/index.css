@@ -3,29 +3,29 @@
 /* ============================================================
    VINIT CREATIONS — Luxury Design System
    Color Psychology:
-   • Deep Navy (#0D1B3E)  → Trust, Authority, Professionalism
-   • Warm Gold (#C9A84C)  → Luxury, Premium, Indian Elegance
-   • Champagne (#E8D5A3)  → Softness, Warmth, Sophistication
-   • Ivory (#FAF8F2)      → Cleanliness, Premium Feel
-   • Charcoal (#1C2537)   → Depth, Seriousness
+   • Forest Green (#1B4D3E) → Trust, Nature, Growth, Premium
+   • Warm Gold (#D4A843)    → Luxury, Premium, Indian Elegance
+   • Cream (#FDF8F0)        → Cleanliness, Warmth, Sophistication
+   • Forest Deep (#0F2E25)  → Depth, Seriousness
+   • Gold Light (#E8D5A3)   → Softness, Warmth
    Fonts:
    • Playfair Display → Heritage, Elegance (Headings)
    • Plus Jakarta Sans → Modern, Clean (Body)
 ============================================================ */
 
 :root {
-  --navy: #0D1B3E;
-  --navy-light: #1C2D54;
-  --navy-deep: #080F22;
-  --gold: #C9A84C;
+  --forest: #1B4D3E;
+  --forest-light: #2D6B4F;
+  --forest-deep: #0F2E25;
+  --gold: #D4A843;
   --gold-light: #E8D5A3;
   --gold-pale: #F5EDD6;
   --champagne: #D4AF7A;
-  --ivory: #FAF8F2;
+  --cream: #FDF8F0;
   --charcoal: #1C2537;
   --text-muted: #8B9AB5;
-  --border-gold: rgba(201, 168, 76, 0.25);
-  --glass-bg: rgba(13, 27, 62, 0.7);
+  --border-gold: rgba(212, 168, 67, 0.25);
+  --glass-bg: rgba(27, 77, 62, 0.7);
   --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -57,7 +57,7 @@ body {
 .font-body { font-family: 'Plus Jakarta Sans', sans-serif; }
 
 .text-gold-gradient {
-  background: linear-gradient(135deg, #E8D5A3 0%, #C9A84C 40%, #F5EDD6 70%, #C9A84C 100%);
+  background: linear-gradient(135deg, #E8D5A3 0%, #D4A843 40%, #F5EDD6 70%, #D4A843 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -65,9 +65,10 @@ body {
 
 .text-gold { color: var(--gold); }
 .text-gold-light { color: var(--gold-light); }
-.text-navy { color: var(--navy); }
-.text-ivory { color: var(--ivory); }
+.text-forest { color: var(--forest); }
+.text-cream { color: var(--cream); }
 .text-muted { color: var(--text-muted); }
+.text-forest-deep { color: var(--forest-deep); }
 
 .gold-divider {
   width: 60px; height: 2px;
@@ -116,7 +117,7 @@ body {
   align-items: center;
   gap: 8px;
   padding: 14px 32px;
-  background: linear-gradient(135deg, #C9A84C, #E8D5A3, #C9A84C);
+  background: linear-gradient(135deg, #D4A843, #E8D5A3, #D4A843);
   background-size: 200% auto;
   color: var(--navy);
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -398,7 +399,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #E8D5A3, #C9A84C);
+  background: linear-gradient(135deg, #E8D5A3, #D4A843);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -562,9 +563,9 @@ body {
   white-space: nowrap;
 }
 
-.bg-navy { background-color: var(--navy); }
-.bg-navy-deep { background-color: var(--navy-deep); }
-.bg-ivory { background-color: var(--ivory); }
+.bg-forest { background-color: var(--forest); }
+.bg-forest-deep { background-color: var(--forest-deep); }
+.bg-cream { background-color: var(--cream); }
 .bg-gold-pale { background-color: var(--gold-pale); }
 
 .ornament-line {
@@ -627,7 +628,7 @@ body {
 .accordion-content.open { max-height: 400px; }
 
 .nav-cta {
-  background: linear-gradient(135deg, #C9A84C, #E8D5A3);
+  background: linear-gradient(135deg, #D4A843, #E8D5A3);
   color: var(--navy) !important;
   padding: 8px 20px !important;
   border-radius: 4px;

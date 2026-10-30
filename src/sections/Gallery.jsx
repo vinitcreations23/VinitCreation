@@ -10,11 +10,11 @@ const GALLERY = [
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="section-py bg-[#F5F3EE]" aria-label="Vinit Creations Uniform Gallery">
+    <section id="gallery" className="section-py bg-cream" aria-label="Vinit Creations Uniform Gallery">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 reveal">
           <span className="section-label">Portfolio</span>
-          <h2 className="font-display text-navy text-4xl sm:text-5xl font-bold mt-5">
+          <h2 className="font-display text-forest text-4xl sm:text-5xl font-bold mt-5">
             Our Work Speaks
             <span className="italic text-gold"> For Itself</span>
           </h2>
@@ -45,7 +45,7 @@ export default function Gallery() {
             href="https://www.instagram.com/vinit_with_creations/"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-outline-gold border-navy text-navy hover:bg-navy hover:text-white"
+            className="btn-outline-gold border-forest text-forest hover:bg-forest hover:text-cream"
             id="gallery-instagram"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">

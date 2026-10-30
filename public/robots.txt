@@ -1,4 +1,12 @@
+# Robots.txt for Vinit Creations
 User-agent: *
 Allow: /
 
+# Sitemap
 Sitemap: https://vinitcreations.netlify.app/sitemap.xml
+
+# Host
+Host: https://vinitcreations.netlify.app
+
+# Crawl-delay
+Crawl-delay: 10

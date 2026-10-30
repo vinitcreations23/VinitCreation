@@ -8,7 +8,6 @@ import About from './sections/About';
 import Services from './sections/Services';
 import Process from './sections/Process';
 import Gallery from './sections/Gallery';
-import Testimonials from './sections/Testimonials';
 import Contact from './sections/Contact';
 
 // Global scroll reveal observer
@@ -49,7 +48,6 @@ export default function App() {
         <Services />
         <Process />
         <Gallery />
-        <Testimonials />
         <Contact />
       </main>
 
@@ -74,7 +72,7 @@ export default function App() {
       {/* Back to Top */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="fixed bottom-28 right-7 z-40 w-10 h-10 rounded-full border border-[rgba(201,168,76,0.3)] bg-navy flex items-center justify-center text-gold hover:bg-gold hover:text-navy transition-all duration-300 opacity-80 hover:opacity-100"
+        className="fixed bottom-28 right-7 z-40 w-10 h-10 rounded-full border border-[rgba(212,168,67,0.3)] bg-forest flex items-center justify-center text-gold hover:bg-gold hover:text-forest-deep transition-all duration-300 opacity-80 hover:opacity-100"
         aria-label="Back to top"
         id="back-to-top-btn"
       >

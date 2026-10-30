@@ -4,7 +4,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-navy-deep border-t border-[rgba(201,168,76,0.1)]" aria-label="Footer">
+    <footer className="bg-forest-deep border-t border-[rgba(212,168,67,0.1)]" aria-label="Footer">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer */}
         <div className="py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -16,7 +16,7 @@ export default function Footer() {
                 src="/images/logo.png"
                 alt="Vinit Creations Logo"
                 className="h-12 w-12 object-contain"
-                style={{ filter: "drop-shadow(0 0 8px rgba(201,168,76,0.3))" }}
+                style={{ filter: "drop-shadow(0 0 8px rgba(212,168,67,0.3))" }}
               />
               <div>
                 <div className="font-display text-white font-semibold text-base">Vinit Creations</div>
@@ -31,7 +31,7 @@ export default function Footer() {
                 href="https://www.instagram.com/vinit_with_creations/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-[rgba(201,168,76,0.2)] flex items-center justify-center text-white/50 hover:text-gold hover:border-gold transition-all duration-300"
+                className="w-9 h-9 rounded-full border border-[rgba(212,168,67,0.2)] flex items-center justify-center text-white/50 hover:text-gold hover:border-gold transition-all duration-300"
                 aria-label="Instagram"
               >
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
@@ -42,7 +42,7 @@ export default function Footer() {
                 href="https://wa.me/919823498295"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-[rgba(201,168,76,0.2)] flex items-center justify-center text-white/50 hover:text-green-400 hover:border-green-400 transition-all duration-300"
+                className="w-9 h-9 rounded-full border border-[rgba(212,168,67,0.2)] flex items-center justify-center text-white/50 hover:text-gold hover:border-gold transition-all duration-300"
                 aria-label="WhatsApp"
               >
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
@@ -106,35 +106,47 @@ export default function Footer() {
             <h3 className="font-display text-white font-semibold text-sm mb-5 uppercase tracking-widest">Contact Us</h3>
             <div className="space-y-4">
               <a href="tel:+919823498295" className="flex items-start gap-3 group">
-                <span className="text-gold text-lg flex-shrink-0 mt-0.5">📞</span>
+                <span className="text-gold text-lg flex-shrink-0 mt-0.5">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 8.18 19.79 19.79 0 0 1 .1 5.6 2 2 0 0 1 2.08 3.52h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 11.1a16 16 0 0 0 6 6l.72-.72a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+                </span>
                 <div>
                   <div className="text-white/45 text-xs uppercase tracking-widest">Call / WhatsApp</div>
                   <div className="text-white/80 text-sm group-hover:text-gold transition-colors">+91 98234 98295</div>
                 </div>
               </a>
               <a href="mailto:vinitcreations23@gmail.com" className="flex items-start gap-3 group">
-                <span className="text-gold text-lg flex-shrink-0 mt-0.5">✉️</span>
+                <span className="text-gold text-lg flex-shrink-0 mt-0.5">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
+                </span>
                 <div>
                   <div className="text-white/45 text-xs uppercase tracking-widest">Email</div>
                   <div className="text-white/80 text-sm group-hover:text-gold transition-colors break-all">vinitcreations23@gmail.com</div>
                 </div>
               </a>
-              <a href="https://maps.app.goo.gl/oAbPq8a9RdVdPtJc9" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 group">
-                <span className="text-gold text-lg flex-shrink-0 mt-0.5">📍</span>
+              <div className="flex items-start gap-3 group">
+                <span className="text-gold text-lg flex-shrink-0 mt-0.5">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
+                </span>
                 <div>
                   <div className="text-white/45 text-xs uppercase tracking-widest">Location</div>
-                  <div className="text-white/80 text-sm group-hover:text-gold transition-colors">Udhana, Surat, Gujarat</div>
+                  <div className="text-white/80 text-sm">Udhana, Surat, Gujarat</div>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-[rgba(201,168,76,0.08)] py-6">
+        <div className="border-t border-[rgba(212,168,67,0.08)] py-6">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-white/30 text-xs text-center sm:text-left">
-              © {new Date().getFullYear()} Vinit Creations, Surat. All rights reserved. | GST Registered | Made in India 🇮🇳
+              © {new Date().getFullYear()} Vinit Creations, Surat. All rights reserved. | GST Registered | Made in India
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true" className="inline-block align-middle ml-1">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M2 10h20" />
+                <path d="M2 14h20" />
+                <circle cx="12" cy="12" r="2.5" />
+              </svg>
             </p>
             <div className="flex gap-4 text-white/30 text-xs">
               <span>Uniform Manufacturers in Surat</span>

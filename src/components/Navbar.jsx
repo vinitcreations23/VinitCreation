@@ -5,7 +5,6 @@ const NAV_LINKS = [
   { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
   { label: 'Gallery', href: '#gallery' },
-  { label: 'Testimonials', href: '#testimonials' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -17,7 +16,7 @@ export default function Navbar() {
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 60);
-      const sections = ['home','about','services','gallery','testimonials','contact'];
+      const sections = ['home','about','services','gallery','contact'];
       for (let i = sections.length - 1; i >= 0; i--) {
         const el = document.getElementById(sections[i]);
         if (el && window.scrollY >= el.offsetTop - 100) {
@@ -54,7 +53,7 @@ export default function Navbar() {
                   src="/images/logo.png"
                   alt="Vinit Creations Logo"
                   className="h-10 w-10 object-contain transition-transform duration-500 group-hover:scale-110"
-                  style={{ filter: 'drop-shadow(0 0 8px rgba(201,168,76,0.4))' }}
+                  style={{ filter: 'drop-shadow(0 0 8px rgba(212,168,67,0.4))' }}
                 />
               </div>
               <div className="flex flex-col leading-tight">
